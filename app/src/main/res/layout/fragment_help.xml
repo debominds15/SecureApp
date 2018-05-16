@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@color/colorSecondary"
+            android:layout_below="@+id/user_profile_photo"
+            android:layout_alignParentStart="true"
+            android:padding="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:layout_alignParentBottom="true">
+
+            <TextView
+                android:id="@+id/txtLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:textStyle="bold|italic"
+                android:layout_marginTop="20dp"
+                android:textSize="26sp"
+                android:textColor="@color/colorSecondaryText"
+                android:text="SecureApp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtLabel"
+                android:textSize="18sp"
+                android:textStyle="italic"
+                android:layout_marginTop="20dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:textColor="@color/colorSecondaryText"
+                android:text="Secure App is an app using which you can keep all others apps secure.You can login in this app and add other apps for making it secure and can open directly from SecureApp by clicking on the app icon, then lock screen won't appear since you are opening other secured apps safely through SecureApp. Here different encryption standards are applied to keep data safe."/>
+        <!--
+            <ImageView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtLabel"
+                android:src="@drawable/ic_help"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"/>-->
+
+
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/user_profile_photo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_launcher"
+            android:elevation="6dp"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    </ScrollView>

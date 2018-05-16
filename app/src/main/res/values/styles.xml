@@ -1,0 +1,102 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="MyMaterialTheme.Base">
+
+    </style>
+
+    <style name="AppCompatAlertDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/colorSecondaryText</item>
+        <item name="android:textColorPrimary">@color/colorSecondaryText</item>
+        <!--<item name="android:background">#5fa3d0</item>-->
+    </style>
+
+    <style name="MyTitleTextApperance" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="et" parent="@android:style/Widget.EditText">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="MyMaterialTheme.Base" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorSecondaryText</item>
+        <item name="android:itemBackground">@android:color/white</item>
+        <item name="colorControlActivated">@color/colorPrimary</item>
+        <item name="android:itemTextAppearance">@style/myCustomMenuTextApearance</item>
+    </style>
+
+    <style name="myCustomMenuTextApearance" parent="@android:style/TextAppearance.Widget.IconMenu.Item">
+        <item name="android:textColor">@color/colorSecondaryText</item>
+    </style>
+    <style name="TextAppearence.App.TextInputLayout" parent="@android:style/TextAppearance">
+    <item name="android:textColor">@android:color/white</item>
+    <item name="android:textSize">12sp</item>
+    <item name="colorAccent">@android:color/white</item>
+    </style>
+
+    <style name="customCheckBoxStyle" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:textSize">10sp</item>
+        <item name="android:typeface">normal</item>
+    </style>
+
+
+    <style name="smallTextButton" parent="android:style/Widget.Button">
+        <item name="android:textSize">10sp</item>
+        <item name="android:typeface">normal</item>
+    </style>
+    <style name="normalTextButton" parent="android:style/Widget.Button">
+        <item name="android:textSize">15sp</item>
+        <item name="android:typeface">normal</item>
+    </style>
+    <style name="normalTextView" parent="android:style/Widget.TextView">
+        <item name="android:textSize">15sp</item>
+        <item name="android:typeface">normal</item>
+    </style>
+
+    <style name="NavigationTabTextAppeareance" parent="TextAppearance.Design.Tab">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+<!--    <style name="Custom" parent="android:Theme.DeviceDefault.Dialog">
+        <item name="DialogTitleAppearance">@android:style/TextAppearance.Medium</item>
+        <item name="DialogTitleText">Please Wait</item>
+        <item name="DialogSpotColor">@android:color/holo_orange_dark</item>
+        <item name="DialogSpotCount">8</item>
+    </style>-->
+    <style name="Theme.Transparent" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:editTextStyle">@style/et</item>
+    </style>
+    <!--
+    <style name="FloatingLabel" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/colorSecondaryText</item>
+        <item name="android:textColorHint">@color/colorSecondaryText</item>
+        <item name="colorAccent">@color/colorSecondaryText</item>
+        <item name="colorControlNormal">@color/colorSecondaryText</item>
+        <item name="colorControlActivated">@color/colorSecondaryText</item>
+        <item name="colorControlHighlight">@color/colorSecondaryText</item>
+        <item name="android:textColorHighlight">@color/colorSecondaryText</item>
+    </style>-->
+
+    <style name="Transparent" parent="@android:style/Theme.NoTitleBar">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowBackground">@color/colorTranslucent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+</resources>

@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/layone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/textColorPrimary" >
+
+            <ImageView
+                android:id="@+id/imageRobot"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:src="@drawable/ic_launcher" />
+
+            <EditText
+                android:id="@+id/edtName"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                android:maxLength="15"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/txtName"
+                android:background="@drawable/rect"
+                android:textSize="20sp"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:inputType="textPersonName" >
+                <requestFocus />
+            </EditText>
+
+            <TextView
+                android:id="@+id/txtName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/imageRobot"
+                android:layout_marginTop="20dp"
+                android:text="Name"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+            <EditText
+                android:id="@+id/edtPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                android:maxLength="15"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/txtPassword"
+                android:background="@drawable/rect"
+                android:textSize="20sp"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:inputType="textPassword" >
+                <requestFocus />
+            </EditText>
+
+            <TextView
+                android:id="@+id/txtPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/edtName"
+                android:layout_marginTop="20dp"
+                android:text="Password"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+            <EditText
+                android:id="@+id/edtConfirm"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+
+                android:maxLength="15"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/txtConfirm"
+                android:background="@drawable/rect"
+                android:textSize="20sp"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:inputType="textPassword" >
+                <requestFocus />
+            </EditText>
+
+            <TextView
+                android:id="@+id/txtConfirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/edtPassword"
+                android:layout_marginTop="20dp"
+                android:text="Confirm Password"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+            <TextView
+                android:id="@+id/txtAddr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/edtConfirm"
+                android:layout_marginTop="20dp"
+                android:text="Email id"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/edtAddr"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/rect"
+                android:layout_below="@+id/txtAddr"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:inputType="textPersonName" >
+                <requestFocus />
+
+            </EditText>
+
+            <TextView
+                android:id="@+id/txtMob"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/edtAddr"
+                android:layout_marginTop="20dp"
+                android:text="Mobile Number"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText
+                android:id="@+id/edtMob"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/rect"
+                android:layout_below="@+id/txtMob"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:maxLength="10"
+                android:inputType="phone"
+                >
+
+                <requestFocus />
+            </EditText>
+            <TextView
+                android:id="@+id/txtSec"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="20dp"
+                android:layout_below="@+id/edtMob"
+                android:layout_marginTop="20dp"
+                android:text="Security Question"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+            <!--<Spinner
+                android:id="@+id/spinnerSec"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_below="@+id/txtSec"
+                style="@style/Spinner"
+
+                android:layout_marginTop="20dp"
+
+                />-->
+            <RelativeLayout
+                android:id="@+id/spinners"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtSec"
+                android:layout_marginTop="15dp"
+                android:layout_alignEnd="@+id/edtMob">
+            <Spinner
+                android:id="@+id/spinnerSec"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="20dp"
+                android:textSize="16sp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="30dp"
+                android:layout_alignParentEnd="true" />
+          <!--  <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/arrow"
+                android:layout_alignBottom="@+id/spinnerSec"
+                android:layout_alignEnd="@+id/spinnerSec" />-->
+        </RelativeLayout>
+            <TextView
+                android:id="@+id/txtSeca"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="20dp"
+                android:layout_below="@+id/spinners"
+                android:layout_marginTop="20dp"
+                android:text="Security Answer"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+            <EditText
+                android:id="@+id/edtSeca"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/txtSeca"
+                android:background="@drawable/rect"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:inputType="textPersonName" >
+                <requestFocus />
+            </EditText>
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/edtSeca"
+                android:layout_marginTop="50dp"
+                android:text="REGISTER"
+                android:textStyle="bold"
+                android:textSize="40sp"
+                android:textColor="@color/textColorPrimary"
+                android:background="@drawable/my_button"
+                android:gravity="center" />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

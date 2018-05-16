@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorSlider1"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/touch_id_slide_1_title"
+        android:textColor="@color/colorSecondaryText"
+        android:textSize="@dimen/slide_title"
+        android:id="@+id/txtSlider1_header"
+        android:layout_marginBottom="50dp"
+        android:textStyle="bold"
+        android:layout_above="@+id/imgAppIcon"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/desc_padding"
+        android:paddingRight="@dimen/desc_padding"
+        android:text="@string/touch_id_slide_1_desc"
+        android:id="@+id/txtSlider1_body"
+        android:textAlignment="center"
+        android:textColor="@color/colorSecondaryText"
+        android:textSize="@dimen/slide_desc"
+        android:layout_marginTop="22dp"
+        android:layout_below="@+id/imgAppIcon"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="@dimen/img_width_height"
+        android:layout_height="@dimen/img_width_height"
+        android:id="@+id/imgAppIcon"
+        android:src="@drawable/login_screen"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

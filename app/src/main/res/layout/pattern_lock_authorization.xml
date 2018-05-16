@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/my_wall_1"
+    android:id="@+id/appLockScreenTheme"
+    android:orientation="vertical"
+    tools:context=".activity.PatternLockAuthorization">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:id="@+id/relativeMenuIcon"
+       >
+
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:onClick="showPopup"
+            android:background="@drawable/menu_icon"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <!--   <include
+            android:id="@+id/tool_bar"
+            layout="@layout/tool_bar"
+           />-->
+    <!-- <EditText
+         android:id="@+id/correct_pattern_edittext"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:hint="Correct Pattern"
+         android:inputType="number"/>
+
+     <CheckBox
+         android:id="@+id/stealthmode"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/correct_pattern_edittext"
+         android:checked="false"
+         android:text="Stealth mode"/>
+ -->
+    <!-- <TextView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:gravity="center"
+         android:text="Draw an unlock pattern "
+         android:textColor="#fff"
+         android:textSize="22sp"
+         android:layout_marginTop="20dp"
+         android:id="@+id/txtPatternHeader"
+         android:layout_below="@+id/tool_bar"
+         android:layout_alignStart="@+id/pattern" />-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SecureApp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold|italic"
+        android:textSize="35dp"
+        android:id="@+id/textView3" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginLeft="100dp"
+        android:background="@android:color/white"
+        android:layout_marginBottom="40dp"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imgAppIcon"
+        android:src="@drawable/ic_launcher"
+        android:layout_gravity="center_horizontal"
+        android:layout_above="@+id/pattern"
+        android:layout_centerHorizontal="true" />
+
+    <com.amnix.materiallockview.MaterialLockView
+        xmlns:lockview="http://schemas.android.com/apk/res-auto"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:id="@+id/pattern"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        lockview:LOCK_COLOR="#fff"
+        lockview:WRONG_COLOR="#ff0000"
+        lockview:CORRECT_COLOR="#00ff00"
+       />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1.0"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/layoutBtnsInPatternBottom"
+        android:visibility="gone"
+        >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnClearAppPattern"
+            android:visibility="gone"
+            android:layout_weight="0.5"
+            android:text="Clear"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnCancelPattern"
+            android:text="Cancel"
+            android:layout_weight="0.5"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnAppPatternContinue"
+            android:layout_weight="0.5"
+            android:text="Continue"
+            />
+
+    </LinearLayout>
+
+    <!--   <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/patternAuthenticationSuccessful"
+           android:textColor="@color/colorPrimary"
+           android:gravity="center_horizontal"
+           android:text="Correct Pattern"
+           android:textSize="22sp"
+           android:layout_alignParentBottom="true"
+           />-->
+</LinearLayout>

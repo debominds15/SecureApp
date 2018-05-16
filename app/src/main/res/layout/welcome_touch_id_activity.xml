@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar">
+    </include>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/colorPrimary"
+        android:text="What's special in my SecureApp"
+        android:gravity="center_horizontal"
+        android:textSize="18sp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginTop="20dp"
+        android:textStyle="italic"
+        android:textSize="23sp"
+        android:text="Touch Id Access"
+        android:gravity="center_horizontal"
+        />
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:src="@drawable/touchid_purple"
+    />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:theme="@style/normalTextView"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Use your fingerprint for faster, easier access to login"
+        android:gravity="center_horizontal"
+        />
+    <Button
+        android:id="@+id/btnTouchLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp"
+        android:text="One Touch Login"
+        android:textColor="@android:color/white"
+        android:background="@color/colorPrimary"
+        android:textAllCaps="false"
+        />
+    <Button
+        android:id="@+id/btnNoThanks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/colorGrey"
+        android:text="No, thanks"
+        android:textColor="@color/colorPrimary"
+        android:textAllCaps="false"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Authentication Successful"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/colorPrimary"
+        android:visibility="gone"
+        android:textAllCaps="false"
+        android:id="@+id/textAuthSuccess"
+        android:gravity="center_horizontal"
+        />
+
+</LinearLayout>

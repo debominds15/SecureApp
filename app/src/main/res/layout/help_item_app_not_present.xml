@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorSlider1"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/slide_6_title"
+        android:textColor="@color/colorSecondaryText"
+        android:textSize="@dimen/slide_title"
+        android:id="@+id/txtSlider1_header"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ViewFlipper
+        android:id="@+id/viewFlipper1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/img_width_height"
+            android:src="@drawable/install_app_6"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:text="The app is uninstalled from the device"
+            android:textSize="17sp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />
+
+        <ImageView
+            android:layout_width="@dimen/img_width_height"
+            android:layout_height="@dimen/img_width_height"
+            android:src="@drawable/install_app_5"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:layout_width="@dimen/img_width_height"
+            android:layout_height="@dimen/img_width_height"
+            android:src="@drawable/install_app_3"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:layout_width="@dimen/img_width_height"
+            android:layout_height="@dimen/img_width_height"
+            android:src="@drawable/replace_app_image"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+
+
+    </ViewFlipper>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="@dimen/desc_padding"
+        android:paddingRight="@dimen/desc_padding"
+        android:textSize="@dimen/slide_desc"
+        android:text="@string/slide_6_desc"
+        android:id="@+id/txtSlider1_body"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/colorSecondaryText"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        />
+
+</RelativeLayout>

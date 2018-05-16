@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical"
+        android:paddingTop="20dp">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <EditText
+                android:id="@+id/editName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+                android:maxLength="15"
+                android:drawableTint="#FF4081"
+                android:singleLine="true"
+                android:hint="Name"
+                android:inputType="textPersonName" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <EditText
+                android:id="@+id/editAddr"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:singleLine="true"
+                android:drawableTint="#FF4081"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890_-"
+                android:maxLength="15"
+                android:hint="Username"
+          />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <EditText
+                android:id="@+id/editUniqueCode"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:maxLength="4"
+                android:drawableTint="#FF4081"
+                android:singleLine="true"
+                android:hint="Unique Code"
+                android:inputType="numberDecimal" />
+        </android.support.design.widget.TextInputLayout>
+        <TextView
+            android:id="@+id/textSec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/editMob"
+            android:layout_marginTop="20dp"
+            android:text="Security Question 1"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        <RelativeLayout
+            android:id="@+id/layoutSecQuestion1Profile"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textSec"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_alignEnd="@+id/editMob">
+            <Spinner
+                android:id="@+id/spinnersSecQuest1Profile"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:textSize="16sp"
+
+                android:paddingLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true" />
+          <!--  <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/arrow"
+                android:layout_alignTop="@+id/spinnersSecQuest1Profile"
+                android:layout_alignEnd="@+id/spinnersSecQuest1Profile" />-->
+        </RelativeLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <EditText
+                android:id="@+id/editSecAnswer1Profile"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:singleLine="true"
+                android:drawableTint="#FF4081"
+                android:hint="Security Answer 1"
+                android:maxLength="15"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:id="@+id/textSec2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="20dp"
+            android:text="Security Question 2"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        <RelativeLayout
+            android:id="@+id/layoutSecQuestion2Profile"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textSec"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_alignEnd="@+id/editMob">
+            <Spinner
+                android:id="@+id/spinnersSecQuest2Profile"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:textSize="16sp"
+
+                android:paddingLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true" />
+          <!--  <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/arrow"
+                android:layout_alignTop="@+id/spinnersSecQuest2Profile"
+                android:layout_alignEnd="@+id/spinnersSecQuest2Profile" />-->
+        </RelativeLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            >
+
+            <EditText
+                android:id="@+id/editSecAnswer2Profile"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:singleLine="true"
+                android:drawableTint="#FF4081"
+                android:hint="Security Answer 2"
+                android:maxLength="15"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/butnSave"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:background="@color/colorSecondaryDark"
+            android:textAllCaps="false"
+            android:textColor="@color/colorSecondaryText"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+</ScrollView>
+
+</android.support.v7.widget.CardView>

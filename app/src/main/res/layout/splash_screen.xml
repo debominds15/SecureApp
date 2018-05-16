@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/splash_screen_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    tools:context="com.bdebo.secureapp.activity.SplashScreen">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView5"
+        android:text="SecureApp"
+        android:textSize="50sp"
+        android:textStyle="bold|italic"
+        android:textColor="@color/colorPrimaryText"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+      />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/imgAppIcon"
+        android:src="@drawable/ic_launcher"
+        android:layout_above="@+id/textView5"
+        android:layout_centerHorizontal="true" />
+
+    <ProgressBar
+        android:id="@+id/splash_screen_progressbar"
+        style="@android:style/Widget.Holo.Light.ProgressBar.Horizontal"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:progressTint="@color/white"
+        android:layout_marginTop="49dp"
+        android:layout_below="@+id/textView5"
+        android:layout_centerHorizontal="true" />
+    <!-- <ProgressBar
+        android:id="@+id/splash_screen_progressbar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:indeterminateDrawable="@drawable/progress_indeterminate" />
+-->
+</RelativeLayout>

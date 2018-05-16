@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txtLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:textSize="50dp"
+        android:textColor="#C51162"
+        android:text="SECURE APP"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtLabel"
+        android:textSize="20dp"
+        android:textStyle="italic"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textColor="#C51162"
+        android:text="Secure App is a app which gives you a safe space to store your confidential data on different apps.Here different encryption standards are applied to keep your data safe.This app basically works in offline and the detailed information are stored in local database."/>
+<!--
+    <ImageView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtLabel"
+        android:src="@drawable/ic_help"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>-->
+
+
+
+</RelativeLayout>
+</LinearLayout>
+    </ScrollView>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar">
+    </include>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtApps"
+        android:layout_below="@+id/search_view"
+        android:text="FAQ"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:background="@color/colorSecondary"
+        android:gravity="center_horizontal"
+        android:textStyle="bold|italic"
+        android:textSize="26sp"
+        android:textColor="@color/colorSecondaryText"
+        />
+    <ListView
+        android:id="@+id/listViewFaq"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtApps"
+        android:cacheColorHint="@android:color/transparent"
+        android:listSelector="@android:color/transparent"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/btnAdd">
+    </ListView>
+
+</LinearLayout>

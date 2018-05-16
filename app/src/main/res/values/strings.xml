@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SecureApp</string>
+
+    <string name="title_about">About</string>
+    <string name="title_profile">Profile</string>
+    <string name="title_change_password">Change Password</string>
+    <string name="fingerprint_hint">Touch sensor</string>
+    <string name="log_in">Log in</string>
+    <string name="fingerprint_not_recognized">Fingerprint not recognized. Try again</string>
+    <string name="fingerprint_success">Fingerprint recognized</string>
+    <string name="action_help">Help</string>
+    <string name="action_device_lock_theme">Device Lock Theme</string>
+    <string name="action_settings">Settings</string>
+    <string name="app_username"><i>Username</i></string>
+    <string name="app_password"><i>Password</i></string>
+    <string name="appName"><i>App Name</i></string>
+    <string name="appLockSecurity"><i>App Lock Security</i></string>
+    <string name="reg_conf_pass"><i>Confirm Password</i></string>
+    <string name="reg_uniq_code"><i>Unique Code</i></string>
+    <string name="reg_seca"><i>Security Answer</i></string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">Ok</string>
+    <string name="use_password">Use Password</string>
+    <string name="fingerprint_description">Confirm fingerprint to continue</string>
+    <string name="use_fingerprint_in_future">Use fingerprint in the future</string>
+    <string name="use_fingerprint_to_authenticate_key" >use_fingerprint_to_authenticate_key</string>
+    <string name="new_fingerprint_recognized">new_fingerprint_recognized</string>
+    <string name="use_fingerprint_to_authenticate_title">Use fingerprint to authenticate</string>
+    <string name="password_description">New Fingerprint has been added. Enter your app password to continue</string>
+    <string name="new_fingerprint_enrolled_description">A new fingerprint was added to this device, so your password is required.</string>
+    <string name="title_home">Home</string>
+  <!--  <string-array name="nav_drawer_items">
+        <item >Home</item>
+        <item >Profile</item>
+        <item >About</item>
+        <item >Logout</item>
+    </string-array>
+    <string-array name="nav_drawer_icons">
+        <item >@drawable/ic__home</item>
+        <item >@drawable/ic_profile</item>
+        <item >@drawable/ic_help</item>
+        <item >@drawable/ic_logout</item>
+    </string-array>-->
+    <string name="dialog_session_out">Please log in again.</string>
+    <string name="dialog_session_ok">OK</string>
+    <string name="dialog_action_add_fp">Add</string>
+    <string name="dialog_session_title">Session Expired</string>
+    <string name="dialog_add_fingerprint_title">Add Fingerprint</string>
+    <string name="dialog_add_fingerprint_message">To add fingerprint go to Settings->Security->Nexus Imprint->Add Fingerprint</string>
+    <string name="str_profile">Profile</string>
+    <string name="action_lock_forgot_pattern">Forgot Pattern</string>
+    <string name="action_lock_change_theme">Change Theme</string>
+    <string name="action_lock_invisible_pattern">Visible Pattern</string>
+    <string name="action_continue">Continue</string>
+    <string name="action_exit">Exit</string>
+    <string name="dialog_fingerprint_unavailable">Fingerprint is not available currently. So navigating back to login screen.</string>
+    <string name="label_forgot_password">Password Recovery</string>
+    <string name="label_check_device_password">Device Password</string>
+    <string name="label_check_app_password">App Password</string>
+    <string name="label_help">Help</string>
+    <string name="title_enable">Enable</string>
+    <string name="title_later">Later</string>
+    <string name="label_advanced_security">Advanced Security</string>
+    <string name="label_set_lock_on_recently_app_installed_title">Set App Lock</string>
+    <string name="label_external_storage_permission">Read External Storage Permission</string>
+    <string name="label_action_login_password">Remember Password</string>
+
+
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+
+    <string name="slide_0_title">Welcome to SecureApp</string>
+    <string name="slide_0_desc">Now enjoy the best security aspects for other apps and the device!</string>
+
+    <string name="slide_1_title">App Lock</string>
+    <string name="slide_1_desc">Add security lock to any apps in order to keep it secure!</string>
+
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="slide_2_title">Device Lock</string>
+    <string name="slide_2_desc">Set device lock and enable the toggle button!</string>
+
+    <string name="slide_3_title">Advance Security</string>
+    <string name="slide_3_desc">Enable Advance Security to lock the device automatically when unauthorised access is made during login for 3 consecutive times!</string>
+
+    <string name="slide_4_title">Open App Securely</string>
+    <string name="slide_4_desc">Open app directly from SecureApp if lock is already set!</string>
+
+    <string name="slide_5_title">App Password</string>
+    <string name="slide_5_desc">You can check your app password by authenticating it with existing SecureApp password or Unique code set during registration!</string>
+
+    <string name="slide_6_title">App Uninstalled</string>
+    <string name="slide_6_desc">After setting lock for an app, if the app is uninstalled from the device, PlayStore icon image will be shown for that app. You can get the app from PlayStore by clicking on the icon and then click on set icon and select appropriate app to replace.</string>
+
+    <string name="slide_7_title">Edit User Details</string>
+    <string name="slide_7_desc">Edit user details by clicking on the profile option after login!</string>
+
+    <string name="slide_8_title">Set User Profile Image</string>
+    <string name="slide_8_desc">Set user profile image by clicking on the image and select image from gallery or from camera!</string>
+
+    <string name="slide_9_title">Customize Lock Theme</string>
+    <string name="slide_9_desc">Customize app lock theme by clicking on the right top corner and clicking on Change Theme in App Lock screen.</string>
+
+    <string name="slide_10_title">Invisible Pattern</string>
+    <string name="slide_10_desc">Set invisible pattern for the App Lock!</string>
+
+    <string name="slide_11_title">Remove App Lock</string>
+    <string name="slide_11_desc">You can remove app lock by swiping the row of the app from left to right or vice versa and then click OK</string>
+
+    <string name="slide_12_title">Device Password</string>
+    <string name="slide_12_desc">You can check your device password by authenticating it with existing SecureApp password or Unique code set during registration!</string>
+    <string name="slide_13_desc">Enable Advance Security to lock the device automatically.</string>
+
+    <string name="slide_14_desc">Check App password through SecureApp password/Unique code!</string>
+
+    <string name="slide_15_title">Install App and Set Lock</string>
+    <string name="slide_15_desc">If you want to install new App ,directly add App from the SecureApp. Get the app from PlayStore by clicking on the PlayStore icon and then click on set icon and select appropriate app to replace.</string>
+
+
+    <string name="touch_id_slide_1_title">Biometric Feature</string>
+    <string name="touch_id_slide_1_desc">Your device supports biometric fingerprint feature. Now login with just a single touch!</string>
+
+    <string name="touch_id_slide_3_desc">Place your finger over the device fingerprint sensor when the dialog appears!</string>
+    <string name="touch_id_slide_4_desc">If the fingerprint authentication is successful it will then redirect you to Home Screen!</string>
+    <string name="label_text_first_time">Please sign up first to use this app. This app will help you to secure other apps and the device by adding lock which is customizable.</string>
+
+    <string name="accessibility_service_name">SecureApp</string>
+    <string name="accessibility_service_description">Please turn on the service for App Locker to work</string>
+    <string-array name="array_help_list">
+        <item>How to set lock for app?</item>
+        <item>How to remove lock from app?</item>
+        <item>How to set lock for device?</item>
+        <item>What if the the app is uninstalled after adding lock in the SecureApp?</item>
+        <item>How to open other secured apps from SecureApp?</item>
+        <item>How to check the app lock password?</item>
+        <item>How to check the device lock password?</item>
+        <item>What is Advance Security and how to enable it?</item>
+        <item>How to edit the user details?</item>
+        <item>How to set the user profile image?</item>
+        <item>How to customize the theme of the app lock screen?</item>
+        <item>How to set invisible pattern for the app lock screen?</item>
+        <item>What if the app is not installed in the device initially?</item>
+    </string-array>
+</resources>

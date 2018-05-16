@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:scrollbarAlwaysDrawVerticalTrack="true">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar">
+    </include>
+    <TextView
+        android:id="@+id/login_title"
+        android:layout_below="@+id/tool_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:text="Account Login"
+        android:textColor="@color/colorSecondaryText"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_title"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="70dp"
+        android:background="@color/colorSecondary"
+        android:elevation="4dp"
+        android:id="@+id/loginLayout"
+        android:orientation="vertical"
+        android:padding="20dp">
+<ScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="20dp">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/userTextInput"
+                >
+
+                <EditText
+                    android:id="@+id/editUser"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableTint="#FF4081"
+                    android:singleLine="true"
+                    android:textColor="@color/colorSecondaryText"
+                    android:hint="User Name"
+                    android:inputType="textEmailAddress" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/passTextInput"
+                >
+
+                <EditText
+                    android:id="@+id/editPass"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:singleLine="true"
+                    android:drawableTint="#FF4081"
+                    android:textColor="@color/colorSecondaryText"
+                    android:hint="Password"
+                    android:maxLength="15"
+                    android:inputType="textPassword" />
+            </android.support.design.widget.TextInputLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <CheckBox
+                android:id="@+id/checkBox1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Remember me"
+                android:textColor="@color/colorSecondaryText"
+                android:theme="@style/customCheckBoxStyle"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/btnForgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot Password?"
+        android:textColor="@color/colorSecondaryText"
+        android:gravity="center_vertical"
+        android:theme="@style/smallTextButton"
+        android:textAllCaps="false"
+        android:background="@android:color/transparent"
+        android:layout_alignBaseline="@+id/checkBox1"
+        android:layout_alignBottom="@+id/checkBox1"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>
+            <!--
+</LinearLayout>
+            <TextView
+                android:id="@+id/textWong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+-->
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:orientation="horizontal"
+    android:layout_marginTop="10dp"
+
+    >
+            <Button
+                android:id="@+id/Login"
+                android:layout_width="wrap_content"
+                android:layout_weight="0.9"
+                android:layout_height="wrap_content"
+                android:background="@color/colorSecondaryDark"
+                android:text="Sign in"
+                android:textAllCaps="false"
+                android:textColor="@color/colorSecondaryText"
+                android:textSize="18sp" />
+            <ImageView
+                android:layout_width="54dp"
+                android:layout_height="49dp"
+                android:layout_weight="0.2"
+                android:id="@+id/touchIdImage"
+                android:src="@drawable/touchid_purple"
+                android:layout_marginLeft="10dp"
+                android:visibility="gone"
+                android:layout_toRightOf="@+id/Login" />
+</LinearLayout>
+         <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="10dp"
+             >
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Create an account"
+                android:textAllCaps="false"
+                android:textStyle="italic"
+                android:id="@+id/btnSignup"
+                android:background="@android:color/transparent"
+                android:theme="@style/normalTextButton"
+                android:textColor="@color/colorSecondaryText"
+               />
+            <TextView
+                android:id="@+id/textIncorrectAttempt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Attempts left 2"
+                android:layout_alignParentEnd="true"
+                android:visibility="gone"
+                android:gravity="center_horizontal"
+                android:theme="@style/normalTextView"
+
+                />
+
+         </RelativeLayout>
+
+        </LinearLayout>
+</ScrollView>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textFirstUsage"
+        android:layout_below="@+id/loginLayout"
+        android:textColor="@color/colorSecondaryText"
+        android:layout_marginTop="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollHorizontally="true"
+        android:paddingLeft="15dip"
+        android:paddingRight="15dip"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:freezesText="true"/>
+
+    <ImageView
+        android:id="@+id/user_profile_photo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_launcher"
+        android:elevation="6dp"
+        android:layout_below="@+id/login_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+</RelativeLayout>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtAppsHeader"
+        android:layout_marginTop="26dp"
+
+        android:text="Replace Uninstalled App"
+        android:gravity="center_horizontal"
+        android:textSize="20sp"
+        android:textColor="@color/colorSecondaryText"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:id="@+id/layoutTxtApps"
+        android:layout_below="@+id/txtAppsHeader"
+        android:weightSum="1"
+        >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.47"
+        android:paddingLeft="10dp"
+        android:text="Uninstalled App"
+        android:id="@+id/txtUninstalledApp"
+        android:textSize="10sp"
+        android:textColor="@color/colorSecondaryText"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.53"
+        android:text="Installed Apps"
+        android:paddingLeft="10dp"
+        android:id="@+id/txtInstalledApps"
+        android:textSize="10sp"
+        android:textColor="@color/colorSecondaryText"
+        />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/layoutTxtApps"
+        android:background="@drawable/rect"
+        android:layout_above="@+id/layoutButtonResetAppUninstalled"
+        android:weightSum="1"
+        android:layout_marginTop="10dp"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="0.3"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/uninstalledAppIcon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/play_store" />
+
+            <TextView
+                android:id="@+id/uninstalledAppName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="Name"
+                android:textColor="@color/colorSecondaryText"></TextView>
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerViewSetAppFromInstalledApps"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7"
+            android:background="@drawable/rect"
+            android:cacheColorHint="@android:color/transparent"
+            android:listSelector="@android:color/transparent"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"></android.support.v7.widget.RecyclerView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:background="@drawable/rect"
+            android:visibility="gone"
+            android:layout_weight="0.6"
+            >
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/installedAppIcon"
+                android:src="@drawable/play_store"
+                />
+            <TextView
+                android:id="@+id/installedAppName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorSecondaryText"
+                android:layout_gravity="center_vertical"
+                android:text="Name"
+                >
+            </TextView>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/layoutButtonResetAppUninstalled"
+        android:weightSum="1"
+        android:layout_alignParentBottom="true"
+        >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:id="@+id/btnCancel"
+            android:layout_weight="0.5"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OK"
+            android:id="@+id/btnSave"
+            android:layout_weight="0.5"
+            />
+        
+    </LinearLayout>
+</RelativeLayout>

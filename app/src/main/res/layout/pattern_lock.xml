@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.SetPatternLock">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Draw an unlock pattern "
+        android:textColor="@color/colorSecondaryText"
+        android:textSize="22sp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/txtPatternHeader"
+        android:layout_below="@+id/tool_bar"
+        android:layout_alignStart="@+id/pattern" />
+
+    <com.amnix.materiallockview.MaterialLockView
+        xmlns:lockview="http://schemas.android.com/apk/res-auto"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:id="@+id/pattern"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        lockview:LOCK_COLOR="@color/colorPrimary"
+        lockview:WRONG_COLOR="#ff0000"
+        lockview:CORRECT_COLOR="#00ff00"
+        android:layout_below="@+id/txtPatternHeader"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1.0"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/layoutBtnsInPatternBottom"
+        android:visibility="gone"
+        >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnClearAppPattern"
+            android:textColor="@color/colorSecondaryText"
+            android:visibility="gone"
+            android:layout_weight="0.5"
+            android:text="Clear"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnCancelPattern"
+            android:textColor="@color/colorSecondaryText"
+            android:text="Cancel"
+            android:layout_weight="0.5"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnAppPatternContinue"
+            android:textColor="@color/colorSecondaryText"
+            android:layout_weight="0.5"
+            android:text="Continue"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

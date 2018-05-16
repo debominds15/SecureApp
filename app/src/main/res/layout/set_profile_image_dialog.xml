@@ -1,0 +1,110 @@
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <FrameLayout
+        android:id="@+id/image_container"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/cameraIcon"
+            android:layout_width="wrap_content"
+            android:src="@drawable/camera_icon"
+            android:layout_height="40dp"
+            android:scaleType="fitStart"
+            android:adjustViewBounds="true"
+            android:layout_alignParentLeft="true" />
+
+
+
+    </FrameLayout>
+    <FrameLayout
+        android:id="@+id/image2_container"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_toRightOf="@+id/image_container"
+        android:layout_marginLeft="100dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/galleryIcon"
+            android:layout_width="wrap_content"
+            android:src="@drawable/gallery_icon"
+            android:layout_height="40dp"
+            android:scaleType="fitStart"
+            android:adjustViewBounds="true"
+            android:layout_alignParentLeft="true" />
+
+
+    </FrameLayout>
+    <FrameLayout
+        android:id="@+id/image3_container"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/image_container"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Camera"
+            android:textColor="@color/colorSecondaryText"
+            android:textStyle="bold"
+            />
+
+
+    </FrameLayout>
+    <FrameLayout
+        android:id="@+id/image4_container"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/image3_container"
+        android:layout_below="@+id/image2_container"
+        android:layout_marginLeft="90dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gallery"
+            android:textColor="@color/colorSecondaryText"
+            android:textStyle="bold"
+            />
+    </FrameLayout>
+    <FrameLayout
+        android:id="@+id/image5_container"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/image4_container"
+        android:layout_marginLeft="20dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/removeIcon"
+            android:layout_width="wrap_content"
+            android:src="@drawable/remove_icon"
+            android:layout_height="40dp"
+            android:scaleType="fitStart"
+            android:adjustViewBounds="true"
+            android:layout_alignParentLeft="true" />
+
+    </FrameLayout>
+    <FrameLayout
+        android:id="@+id/image6_container"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/image5_container"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Remove Photo"
+            android:textColor="@color/colorSecondaryText"
+            android:textStyle="bold"
+            />
+    </FrameLayout>
+</RelativeLayout>

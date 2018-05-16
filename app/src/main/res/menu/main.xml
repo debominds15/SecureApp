@@ -1,0 +1,72 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+ <item
+        android:id="@+id/action_search"
+        android:title="Search App"
+        android:orderInCategory="100"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        android:icon="@android:drawable/ic_menu_search"
+        app:showAsAction="ifRoom" />
+ <item android:id="@+id/action_device_lock_theme" android:title="@string/action_device_lock_theme"
+     android:orderInCategory="100" app:showAsAction="never" />
+ <item
+     android:id="@+id/device_action_lock_invisible_pattern"
+     android:title="@string/action_lock_invisible_pattern"
+     android:orderInCategory="100"
+     android:checkable="true"
+     app:showAsAction="never" />
+
+ <item android:id="@+id/action_help" android:title="@string/action_help"
+     android:orderInCategory="100" app:showAsAction="never" />
+   <!-- <item
+        app:showAsAction="always|collapseActionView"
+        android:icon="@android:drawable/ic_menu_search"
+        android:id="@+id/menu_item_search"
+        android:actionViewClass="android.widget.SearchView"
+        android:title="Search"
+        android:iconifiedByDefault="true"/>-->
+<!--<group android:checkableBehavior="single">
+    <item
+        android:id="@+id/item_action_purple"
+        android:title="@string/action_purple"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/item_action_red"
+        android:title="@string/action_red"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/item_action_indigo"
+        android:title="@string/action_blue"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/item_action_pink"
+        android:title="@string/action_pink"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+
+
+
+</group>-->
+ <!--   <item
+        android:id="@+id/item_action_add_device_lock"
+        android:title="@string/action_lock_device_lock"
+        android:orderInCategory="100"
+        android:checkable="true"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/item_action_check_device_lock_password"
+        android:title="@string/action_lock_check_device_lock"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/item_action_change_device_lock_password"
+        android:title="@string/action_lock_change_device_lock"
+        android:orderInCategory="100"
+        app:showAsAction="never" />-->
+</menu>

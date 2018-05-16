@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#9c27b0</color>
+    <color name="colorPrimaryDark">#6a0080</color>
+    <color name="colorPrimaryText">#e0e0e0</color>
+    <color name="colorSecondary">#e1bee7</color>
+    <color name="colorSlider0">#90caf9</color>
+    <color name="colorSlider1">#e1bee7</color>
+    <color name="colorSlider2">#f8bbd0</color>
+    <color name="colorSlider3">#bbdefb</color>
+    <color name="colorSlider4">#b2dfdb</color>
+    <color name="colorSlider5">#ffecb3</color>
+    <color name="colorSecondaryText">#4e342e</color>
+    <color name="textColorPrimary">#FFFFFF</color>
+    <color name="colorSecondaryDark">#af8eb5</color>
+    <color name="colorGrey">#EEEEEE</color>
+    <color name="hint_color">#42000000</color>
+    <color name="warning_color">#f4511e</color>
+    <color name="success_color">#009688</color>
+    <color name="colorTranslucent">#99000000</color>
+
+    <!-- dots inactive colors -->
+    <color name="dot_dark_screen0">#5d99c6</color>
+    <color name="dot_dark_screen1">#d1395c</color>
+    <color name="dot_dark_screen2">#14a895</color>
+    <color name="dot_dark_screen3">#2278d4</color>
+    <color name="dot_dark_screen4">#a854d4</color>
+    <color name="dot_dark_screen5">#E91E63</color>
+
+    <!-- dots active colors -->
+    <color name="dot_light_screen0">#c3fdff</color>
+    <color name="dot_light_screen1">#f98da5</color>
+    <color name="dot_light_screen2">#8cf9eb</color>
+    <color name="dot_light_screen3">#93c6fd</color>
+    <color name="dot_light_screen4">#e4b5fc</color>
+    <color name="dot_light_screen5">#FAB2C0</color>
+    <array name="array_dot_active">
+        <item>@color/dot_light_screen0</item>
+        <item>@color/dot_light_screen1</item>
+        <item>@color/dot_light_screen0</item>
+        <item>@color/dot_light_screen3</item>
+        <item>@color/dot_light_screen4</item>
+        <item>@color/dot_light_screen5</item>
+    </array>
+
+
+    <array name="array_dot_inactive">
+        <item>@color/dot_dark_screen0</item>
+        <item>@color/dot_dark_screen1</item>
+        <item>@color/dot_dark_screen0</item>
+        <item>@color/dot_dark_screen3</item>
+        <item>@color/dot_dark_screen4</item>
+        <item>@color/dot_dark_screen5</item>
+    </array>
+
+    <array name="array_dot_active_touch_id">
+        <item>@color/dot_light_screen0</item>
+        <item>@color/dot_light_screen1</item>
+        <item>@color/dot_light_screen2</item>
+        <item>@color/dot_light_screen3</item>
+    </array>
+
+
+    <array name="array_dot_inactive_touch_id">
+        <item>@color/dot_dark_screen0</item>
+        <item>@color/dot_dark_screen1</item>
+        <item>@color/dot_dark_screen2</item>
+        <item>@color/dot_dark_screen3</item>
+    </array>
+</resources>
